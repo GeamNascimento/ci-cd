@@ -17,4 +17,4 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d "{\"content\": \" Olá estou te enviando um novo push ou pull request para seu repositório! Gostou?\"}" \
-         https://discordapp.com/api/webhooks/1366473516173627392/FLHc5J6cg9MlTbb1OjgtS_p913yFwIJdpCs3M7ZcyBe57dLQNzML04imyfiWwh4vFn2d
+         https://discordapp.com/api/webhooks/1366471615478501427/gh11xyQlCYMOACBP2zVzSRGnY-IL5RqpeVbaP8-B0npklozmVIzxHNIHxb4qsOL-GpbR
