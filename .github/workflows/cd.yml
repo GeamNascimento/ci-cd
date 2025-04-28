@@ -2,13 +2,14 @@ name: CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Simular Deploy
-      run: echo "Deploy realizado com sucesso!"
+      - uses: actions/checkout@v3
+
+      - name: Simulate Deployment
+        run: echo "Simulando deploy para ambiente de produção!"
