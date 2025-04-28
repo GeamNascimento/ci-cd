@@ -2,15 +2,24 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Rodar verificação
-      run: echo "Teste de integração contínua passando com sucesso!"
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # ou a versão que você está usando
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm run test
